@@ -667,7 +667,7 @@ footer {
 
 @media (max-width: 768px) {
     h1.glitch {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     section {
@@ -681,6 +681,78 @@ footer {
     .fab-container {
         bottom: 20px;
         right: 20px;
+    }
+
+    /* Mobile Navigation */
+    header {
+        padding: 1rem;
+    }
+
+    nav ul {
+        gap: 1rem;
+        font-size: 0.7rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    /* Mobile Widgets */
+    .widget-card {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .widget-preview {
+        min-height: 100px;
+    }
+
+    .widget-info h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Mobile Modal */
+    .modal-content {
+        width: 95%;
+        height: 90vh;
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+    .modal-body {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .modal-image-wrapper {
+        flex: 1;
+        padding: 1.5rem;
+        border-right: none;
+        border-bottom: 1px solid var(--glass-border);
+        max-height: 40vh;
+    }
+
+    .modal-image-wrapper img {
+        max-height: 100%;
+    }
+
+    .modal-details {
+        flex: 1;
+        padding: 1.5rem;
+        gap: 1rem;
+    }
+
+    .modal-details h2 {
+        font-size: 1.8rem;
+    }
+
+    /* Contributors Mobile */
+    .contributors-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contributor-pill {
+        width: 100%;
+        text-align: center;
     }
 }
 

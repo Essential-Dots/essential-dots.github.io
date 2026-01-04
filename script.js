@@ -1,4 +1,14 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Device Detection
+    const isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || window.innerWidth < 768;
+    if (isMobile) {
+        document.body.classList.add('is-mobile');
+        console.log('Device detected: Mobile');
+    } else {
+        document.body.classList.add('is-pc');
+        console.log('Device detected: PC');
+    }
+
     const cursorDot = document.querySelector('.cursor-dot');
     const cursorOutline = document.querySelector('.cursor-outline');
 
@@ -192,7 +202,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function loadPreferences() {
         const savedTheme = localStorage.getItem('widgets_theme') || 'dark';
-        const savedAccent = localStorage.getItem('widgets_accent') || 'red';
+        const savedAccent = localStorage.getItem('widgets_accent') || 'yellow';
 
         applyTheme(savedTheme);
         applyAccent(savedAccent);
